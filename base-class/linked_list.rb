@@ -62,9 +62,13 @@ class LinkedList
     @size -= 1
   end
 
-  def delete(k)
+  def delete(k) # delete the kth node(k > 0)
     if (k > @size)
       puts 'over size'
+      return
+    end
+    if (k == 1)
+      @head = @head.next
       return
     else
       index = @head
