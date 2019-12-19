@@ -1,7 +1,8 @@
 class Node
-  def initialize(val = nil, nextNode = nil)
+  def initialize(val = nil, nextNode = nil, preNode = nil)
     @value = val
     @next = nextNode
+    @pre = preNode
   end
 
   def value
@@ -12,11 +13,20 @@ class Node
     @next
   end
 
+  def pre
+    @pre
+  end
+
   def set_value(val)
     @value = val
   end
+
   def set_next(nextNode)
     @next = nextNode
+  end
+
+  def set_pre(preNode)
+    @pre = preNode
   end
 end
 
