@@ -7,10 +7,10 @@ def e.sort(a)
   for i in 0...a.size
     j = i
     while j > 0 do 
-      if (a[j] < a[j-1])
-        self.exch(a, j, j-1)
+      if (a[j] < a[j - 1])
+        self.exch(a, j, j - 1)
       end
-      j-=1
+      j -= 1
     end
   end
 end
