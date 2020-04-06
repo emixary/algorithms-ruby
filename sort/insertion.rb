@@ -1,4 +1,4 @@
-require_relative  '../sort/sort.rb'
+require_relative  'sort.rb'
 
 e = SortExample.new
 a = [2,3,1,5,4,6]
