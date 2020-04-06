@@ -1,17 +1,17 @@
 require_relative  '../sort/sort.rb'
 
 e = SortExample.new
-a = [3,2,1,5,4]
+a = [2,3,1,5,4,6]
 
 def e.sort(a)
   for i in 0...a.size
-    min = i
-    for j in i...a.size
-      if (a[j] < a[min])
-        min = j
+    j = i
+    while j > 0 do 
+      if (a[j] < a[j-1])
+        self.exch(a, j, j-1)
       end
+      j-=1
     end
-    self.exch(a, i, min)
   end
 end
 
