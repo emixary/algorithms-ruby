@@ -1,2 +1,2 @@
 # algorithms-ruby
-the "algorithms" book exercises with Ruby Language
+the "algorithms" (4th edition) book exercises with Ruby Language
